@@ -62,10 +62,8 @@ async function fetchPrices(){
     try {
         const response = await axios.get(process.env.API_URL);
         const data = response.data;
-
         upsertApiCall(data);
         cleanInvalidPriceLists();
-
         console.log(new Date().toISOString(), "||| CRONJOB: checked");
 
     } catch (error) {
