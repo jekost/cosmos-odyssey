@@ -26,4 +26,4 @@ build/
 Thumbs.db
 
 # config files
-config/config.json
+#config/config.json
